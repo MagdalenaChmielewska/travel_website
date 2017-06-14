@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote {
+  quotes: none; }
+  blockquote:before, blockquote:after {
+    content: '';
+    content: none; }
+
+q {
+  quotes: none; }
+  q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  color: #2A394F;
+  background-color: #FFFFFF;
+  font-size: 1.65rem;
+  line-height: auto; }
+
+.text-indent {
+  text-indent: 20px; }
+
+.page-title, .page-header h2 {
+  height: 0;
+  text-indent: -1000000px; }
+
+.wrapper-header, .wrapper {
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto; }
+
+.wrapper {
+  max-width: 1160px;
+  max-height: 163.5px; }
+
+.page-header {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 57px; }
+  .page-header .nav-top .drop-down-menu {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    height: 8px;
+    padding: 5px;
+    border: solid #FFFFFF;
+    border-width: 0 2px 2px 0;
+    transition: 0.3s transform linear;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+    .page-header .nav-top .drop-down-menu.drop-down-menu-change {
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      bottom: 10px; }
+    @media only screen and (min-width: 1024px) {
+      .page-header .nav-top .drop-down-menu {
+        display: none; } }
+  .page-header .nav-top .logo-div-mobile .logo-mobile {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 115px; }
+    @media only screen and (min-width: 1024px) {
+      .page-header .nav-top .logo-div-mobile .logo-mobile {
+        display: none; } }
+  .page-header .nav-top .nav-links {
+    display: none; }
+    .page-header .nav-top .nav-links.nav-opened {
+      display: block;
+      margin-top: 30px;
+      background-color: #FFFFFF;
+      opacity: 0.8;
+      text-align: left;
+      position: relative; }
+      .page-header .nav-top .nav-links.nav-opened::before {
+        position: absolute;
+        content: '';
+        border-bottom: 10px solid #FFFFFF;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        height: 20px;
+        top: -29px;
+        right: 10px; }
+      .page-header .nav-top .nav-links.nav-opened li {
+        padding: 10px;
+        border-bottom: 1px ridge; }
+        .page-header .nav-top .nav-links.nav-opened li:nth-child(3) {
+          display: none; }
+        .page-header .nav-top .nav-links.nav-opened li a {
+          text-decoration: none;
+          color: #69747C;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row; }
+        .page-header .nav-top .nav-links.nav-opened li img {
+          height: 20px;
+          padding-right: 13px; }
+        .page-header .nav-top .nav-links.nav-opened li:hover {
+          background-color: #F1F1EE;
+          font-weight: bold;
+          border-left: 3px solid blue; }
+    @media only screen and (min-width: 1024px) {
+      .page-header .nav-top .nav-links {
+        display: block; }
+        .page-header .nav-top .nav-links li {
+          width: 17.75%;
+          float: left;
+          text-align: center; }
+          .page-header .nav-top .nav-links li:nth-child(3) {
+            width: 29%; }
+          .page-header .nav-top .nav-links li a {
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            text-decoration: none;
+            line-height: 0.5rem;
+            font-family: "Lato", sans-serif; }
+            .page-header .nav-top .nav-links li a:hover {
+              color: #FEFEFE; }
+              .page-header .nav-top .nav-links li a:hover:not([title="Go back to the home page"]):after {
+                text-align: center;
+                content: "\00b7";
+                color: #0E7ADF;
+                display: block;
+                font-size: 2em; }
+            .page-header .nav-top .nav-links li a:active {
+              color: #0E7ADF; }
+        .page-header .nav-top .nav-links .logo-div .logo {
+          position: relative;
+          top: -2.5px;
+          width: 115px; } }
+
+::-webkit-input-placeholder, .main-page header .sign-up form .normal-state, .main-page header .sign-up form .invalid, .main-page header .sign-up form input[type="submit"] {
+  font-weight: 100;
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  color: #C8C8C8; }
+
+.main-page header {
+  background: url(../images/background_header.png) fixed no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 90vh;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 200; }
+  .main-page header .article-header {
+    padding-top: 100px;
+    padding-bottom: 70px; }
+    .main-page header .article-header h2 {
+      text-transform: uppercase;
+      font-size: 5.5rem;
+      font-weight: 400; }
+    .main-page header .article-header .first-line-article-header {
+      padding-bottom: 6px; }
+  .main-page header .article-lead {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding: 0 107.5px;
+    letter-spacing: 0.04em; }
+  .main-page header .sign-up {
+    margin-top: 47px;
+    margin-bottom: 62px; }
+    .main-page header .sign-up p {
+      font-size: 2.4rem; }
+    .main-page header .sign-up form {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      margin: auto;
+      margin-top: 15px;
+      width: 35%; }
+      .main-page header .sign-up form input[type="email"] {
+        margin-bottom: 10.5px;
+        padding: 12.5px 15px 11.5px;
+        background: none; }
+        .main-page header .sign-up form input[type="email"]:focus {
+          outline: none; }
+      .main-page header .sign-up form .normal-state {
+        border: 1px solid #FFFFFF;
+        border-radius: 2.5px; }
+      .main-page header .sign-up form .invalid {
+        border: 1px solid #7D1515;
+        color: #FFFFFF;
+        border-radius: 0px 0px 2.5px 2.5px; }
+      .main-page header .sign-up form span.invalid:after {
+        position: absolute;
+        top: -24px;
+        left: 0px;
+        border-width: 1px 0 1px 0;
+        border-radius: 2.5px 2.5px 0px 0px;
+        content: 'this is not a valid email address';
+        font-size: 1.2rem;
+        padding: 8px 0;
+        background-color: #7D1515;
+        opacity: 0.8;
+        width: 100%; }
+      .main-page header .sign-up form input[type="submit"] {
+        font-size: 2.295rem;
+        font-weight: 300;
+        padding-top: 10px;
+        padding-bottom: 9px;
+        border: 2px solid #1A88EF;
+        border-radius: 2.5px;
+        background-color: #1A88EF;
+        cursor: pointer;
+        color: #FFFFFF;
+        transition: 0.4s ease-in-out; }
+        .main-page header .sign-up form input[type="submit"]:hover {
+          transition: 0.4s ease-in-out;
+          background-color: #4871A3;
+          border-color: #4871A3; }
+  .main-page header .arrow {
+    display: none; }
+    @media only screen and (min-width: 1024px) {
+      .main-page header .arrow {
+        display: inline;
+        height: 27px;
+        margin-bottom: 21.5px;
+        cursor: pointer; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -14,7 +14,12 @@
             <h1 class="page-title">Travel</h1>
             <nav class="nav-top">
                 <h2>Page Nagigation</h2>
-                <ul>
+                <div class="logo-div-mobile">
+                    <a href="#" title="Go back to the home page">
+                        <img class="logo-mobile" alt="logo" src="images\travel_logo.png">
+                    </a>
+                </div>
+                <ul class="nav-links">
                     <li><a href="#section-about" title="A few word about us">about</a></li>
                     <li><a href="#section-service" title="Find out about our service">service</a></li>
                     <li><div class="logo-div">
@@ -25,70 +30,71 @@
                     <li><a href="#section-plans" title="Find out about plans of travel">plans</a></li>
                     <li><a href="#section-join-us" title="Sign up and join to our travel">sign up</a></li>
                 </ul>
+                <span class="drop-down-menu"></span>
             </nav>
         </header>
-            <main class="main-page">
-                <article>
-                    <header>
-                        <div class="wrapper-header">
-                            <div class="article-header">
-                                <h2 class="first-line-article-header">don't wait</h2>
-                                <h2>travel around the world</h2>
-                            </div>
-                            <p class="article-lead">Curabitur ipsum orci, egestas nec pulvinar quis, varius at diam. Sed ut risus pulvinar, venenatis ligula nec, pellentesque metus. Sed feugiat dolor dictum urna facilisis vestibulum. Fusce convallis facilisis ante, sit amet semper ligula facilisis non. In ante tellus, blandit id fringilla ut, blandit ut enim.</p>
-                            <div class="sign-up">
-                                <p>Join us, see the whole world in a year</p>
-                                <form novalidate action="" method="post">
-                                    <span id="wrongEmail"></span>
-                                    <input class="normal-state" type="email" id="inputEmail" name="email" placeholder="enter your email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$">
-                                    <input type="submit" value="sign up now">
-                                </form>
-                            </div>
-                            <img class="arrow" alt="arrow-down" src="images\arrow_down.png">
+        <main class="main-page">
+            <article>
+                <header>
+                    <div class="wrapper-header">
+                        <div class="article-header">
+                            <h2 class="first-line-article-header">don't wait</h2>
+                            <h2>travel around the world</h2>
                         </div>
-                    </header>
-                    <section class="section-about" id="section-about">
-                        <div class="div-section-about">
-                            <div class="section-text">
-                                <h3>Your dreams come true</h3>
-                                <p class="text-indent">Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis libero orci. Duis efficitur maximus arcu, non egestas dolor lacinia et. Nulla mi felis, vehicula non tortor sed, rhoncus mattis ex.</p>
-                                <p>Etiam tempor dolor et lectus porta, sed ultricies lorem vulputate. Fusce consectetur venenatis mattis. Maecenas accumsan lacinia orci, et lacinia arcu sodales eu. Curabitur sit amet massa nibh. Nullam semper feugiat odio quis tincidunt. Donec ut felis in purus euismod aliquam. Mauris quis nisi porta, condimentum mauris a, ullamcorper augue. Donec volutpat sem eget diam euismod finibus sed sed mauris.</p>
-                            </div>
-                            <div class="div-img-about">
-                                <img class="img-about" alt="Couple on the background of stars" src="images\image_about_section.png">
-                            </div>
+                        <p class="article-lead">Curabitur ipsum orci, egestas nec pulvinar quis, varius at diam. Sed ut risus pulvinar, venenatis ligula nec, pellentesque metus. Sed feugiat dolor dictum urna facilisis vestibulum. Fusce convallis facilisis ante, sit amet semper ligula facilisis non. In ante tellus, blandit id fringilla ut, blandit ut enim.</p>
+                        <div class="sign-up">
+                            <p>Join us, see the whole world in a year</p>
+                            <form novalidate action="" method="post">
+                                <span id="wrongEmail"></span>
+                                <input class="normal-state" type="email" id="inputEmail" name="email" placeholder="enter your email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$">
+                                <input type="submit" value="sign up now">
+                            </form>
                         </div>
-                    </section>
-                    <section class="section-service" id="section-service">
+                        <img class="arrow" alt="arrow-down" src="images\arrow_down.png">
+                    </div>
+                </header>
+                <!--<section class="section-about" id="section-about">
+                    <div class="div-section-about">
                         <div class="section-text">
-                            <h3>The whole world in a year</h3>
-                            <p>Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h3>Your dreams come true</h3>
+                            <p class="text-indent">Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis libero orci. Duis efficitur maximus arcu, non egestas dolor lacinia et. Nulla mi felis, vehicula non tortor sed, rhoncus mattis ex.</p>
+                            <p>Etiam tempor dolor et lectus porta, sed ultricies lorem vulputate. Fusce consectetur venenatis mattis. Maecenas accumsan lacinia orci, et lacinia arcu sodales eu. Curabitur sit amet massa nibh. Nullam semper feugiat odio quis tincidunt. Donec ut felis in purus euismod aliquam. Mauris quis nisi porta, condimentum mauris a, ullamcorper augue. Donec volutpat sem eget diam euismod finibus sed sed mauris.</p>
                         </div>
-                        <div class="div-img-service">
-                            <img class="img-service" alt="forest-image" src="images\image_about_service.png">
+                        <div class="div-img-about">
+                            <img class="img-about" alt="Couple on the background of stars" src="images\image_about_section.png">
                         </div>
-                    </section>
-                    <section class="section-plans" id="section-plans">
-                        <div class="section-text">
-                            <h3>A little bit different</h3>
-                            <p>Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div>
-                            <img class="img-plans" alt="landscape-image" src="images\image_about_plans.png">
-                        </div>
-                    </section>
-                    <section class="wrapper section-join-us" id="section-join-us">
-                        <div class="section-text">
-                            <h3>Join us now</h3>
-                            <p>Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div>
-                            <button class="button-join-us" title="join us">join us</button>
-                        </div>
-                    </section>
-                </article>
-            </main>        
-        <footer class="page-footer">
+                    </div>
+                </section>
+                <section class="section-service" id="section-service">
+                    <div class="section-text">
+                        <h3>The whole world in a year</h3>
+                        <p>Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="div-img-service">
+                        <img class="img-service" alt="forest-image" src="images\image_about_service.png">
+                    </div>
+                </section>
+                <section class="section-plans" id="section-plans">
+                    <div class="section-text">
+                        <h3>A little bit different</h3>
+                        <p>Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <img class="img-plans" alt="landscape-image" src="images\image_about_plans.png">
+                    </div>
+                </section>
+                <section class="wrapper section-join-us" id="section-join-us">
+                    <div class="section-text">
+                        <h3>Join us now</h3>
+                        <p>Curabitur enim lorem, hendrerit sit amet est elementum, molestie tempus nibh. Fusce auctor pellentesque odio eget placerat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis urna eu magna fringilla egestas ac quis erat. Praesent eu molestie quam. Etiam ut magna sed mauris aliquet porta. Sed id quam sed ex rutrum aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div>
+                        <button class="button-join-us" title="join us">join us</button>
+                    </div>
+                </section>-->
+            </article>
+        </main>        
+        <!--<footer class="page-footer">
             <nav class="nav-footer wrapper">
                 <div class="footer-section">
                     <h4>directions</h4>
@@ -142,10 +148,11 @@
                     </a>
                 </div>
             </nav>
-        </footer>
+        </footer>-->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="js/inputValidation.js"></script>  
-        <script src="js/scrollDownButton.js"></script>  
+        <script src="js/scrollDownButton.js"></script>
+        <script src="js/dropDown.js"></script>    
     </body>
 </html>  
