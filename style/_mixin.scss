@@ -32,11 +32,6 @@
     -ms-flex-direction: row;
     flex-direction: row;
 }
-@mixin justify-content-flex-start {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-}
 @mixin flex-display-column($margin-top, $width) {
     @include display-flex;
     @include flex-flow-column;
