@@ -32,12 +32,23 @@
     -ms-flex-direction: row;
     flex-direction: row;
 }
+@mixin flex-direction-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
 @mixin flex-display-column($margin-top, $width) {
     @include display-flex;
     @include flex-flow-column;
     margin: auto;
     margin-top: $margin-top;
     width: $width;
+}
+@mixin align-items($how) {
+    -webkit-box-align: $how;
+    -ms-flex-align: $how;
+    align-items: $how;
 }
 @mixin style-button($size, $padding-top, $padding-bottom, $background-color, $border-color) {
     font-size: $size;
@@ -54,4 +65,9 @@
 @mixin transform ($how) {
   -webkit-transform: $how;
           transform: $how;
+}
+@mixin transition-transform {
+    transition: 0.3s -webkit-transform linear;
+    transition: 0.3s transform linear;
+    transition: 0.3s transform linear, 0.3s -webkit-transform linear;
 }
