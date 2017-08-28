@@ -1,5 +1,8 @@
 # Travel blog  
 
+## Online  
+[https://magdalenachmielewska.github.io/travel_website](https://magdalenachmielewska.github.io/travel_website)
+
 ## How convert sass to css
 
 In order to convert scss files into css files you need to have sass installed.  
